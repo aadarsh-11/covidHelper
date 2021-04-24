@@ -1,10 +1,9 @@
 import React, { Component } from "react";
+import "./Home.css";
+import Message from "./Message";
 
-class Home extends Component {
-  state = {};
-  render() {
-    return <h1>Welcome to dashboard</h1>;
-  }
-}
+const Home = () => {
+  return <Message />;
+};
 
 export default Home;
