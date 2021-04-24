@@ -1,0 +1,13 @@
+.peopleInfo {
+  background-color: aquamarine;
+  padding: 0 3% 3%;
+}
+
+.peopleInfo > h1 {
+  padding: 3%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
