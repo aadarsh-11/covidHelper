@@ -4,14 +4,22 @@ import "./PeopleInfo.css";
 
 const PeopleInfo = ({ peopleData }) => {
   return (
-    <div className="peopleInfo">
-      <h1>peole data</h1>
-      <div className="cards">
-        {peopleData.map((data) => (
-          <PeopleCard heading={data} />
-        ))}
+    <section id="peopleData">
+      <div className="peopleInfo">
+        <h1>People data</h1>
+        <div className="cards">
+          <div className="container-fluid">
+            <div className="row">
+              {peopleData.map((data) => (
+                <div className="col-lg-3">
+                  <PeopleCard heading={data} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

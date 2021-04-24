@@ -1,0 +1,10 @@
+.actionBtns {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3% 10%;
+  background-color: #fcf6f5ff;
+}
+
+.button-group {
+  padding: 5% 0%;
+}
