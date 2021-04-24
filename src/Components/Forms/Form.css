@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    color: #f0f2f5;
+}
+
+.input{
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 30px -12px rgba(0,0,0,0.75);
+    border: none;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+label{
+    color: black;
+    justify-content: flex-start;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.requirements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.other{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.submit{
+    margin: 50px;
+}
