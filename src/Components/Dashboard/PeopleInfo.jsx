@@ -12,7 +12,7 @@ const PeopleInfo = ({ peopleData }) => {
             <div className="row">
               {peopleData &&
                 peopleData.map((data) => (
-                  <div key="data.email" className="col-lg-3">
+                  <div className="col-lg-3">
                     <PeopleCard heading={data.name} />
                   </div>
                 ))}

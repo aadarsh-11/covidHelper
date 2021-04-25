@@ -27,6 +27,7 @@ const Home = () => {
       <Message />
       <Action />
       <PeopleInfo peopleData={peopleData} />
+      {console.log(peopleData)}
       <Footer />
     </React.Fragment>
   );

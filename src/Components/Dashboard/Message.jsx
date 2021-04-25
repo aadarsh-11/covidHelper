@@ -12,15 +12,16 @@ const Message = () => {
         />
       </div>
       <div className="messageContainer">
-        <h1 className="messageHeading ">Welcome to dashboard</h1>
+        <h1 className="messageHeading ">Stay Home Stay Safe!</h1>
         <p className="messageContent">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Coronavirus disease (COVID-19) is an infectious disease caused by a
+          newly discovered coronavirus. Most people who fall sick with COVID-19
+          will experience mild to moderate symptoms and recover without special
+          treatment. In some region many different types of Things are require
+          and there are that not available. So we are provide to register your
+          self and to ask what types of things you need is if anyone have they
+          contact you and help you else they share it for others to help you.
+          You can always help anyone!
         </p>
       </div>
     </section>
