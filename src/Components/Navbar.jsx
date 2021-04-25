@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <NavLink className="navbar-brand" to="/">
-        Covid Helper
+        Pandemic Life Saver
       </NavLink>
       <button
         className="navbar-toggler"
@@ -32,9 +32,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/">
+            <a className="nav-link" href="#contact">
               Contact Us
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
