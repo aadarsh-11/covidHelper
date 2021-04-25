@@ -4,7 +4,7 @@ import Action from "./Action";
 import "./Home.css";
 import Message from "./Message";
 import PeopleInfo from "./PeopleInfo";
-import db from "../Firebase/firebase2";
+import db from "../Firebase/Firebase";
 
 const Home = () => {
   const [peopleData, setData] = useState([]);

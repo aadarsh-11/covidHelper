@@ -1,42 +1,59 @@
 import { React, useState } from "react";
-import './Form.css';
-import { db } from '../Firebase/Firebase';
-import { Checkbox, Button } from '@material-ui/core';
+import "./Form.css";
+import db from "../Firebase/Firebase";
+import { Checkbox, Button } from "@material-ui/core";
 
 const Form = () => {
-
-  const [name, setname] = useState("");
-  const [email, setemail] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [beds, setBeds] = useState("");
+  const [icu, setIcu] = useState("");
+  const [oxygen, setOxygen] = useState("");
+  const [remdesivir, setRemdesivir] = useState("");
+  const [ventilator, setVentilator] = useState("");
 
   const handleSubmit = (e) => {
-    // e.preventdefault();
+    e.preventDefault();
 
-    db.collection('Information').add({
-      Username: name,
-      Useremail: email,
-    })
+    db.collection("peopleData")
+      .add({
+        name: name,
+        email: email,
+        beds: beds,
+      })
       .then(() => {
         alert("Form has been submitted");
       })
       .catch((error) => {
         console.log(error.message);
       });
-    setname("");
-    setemail("");
-  }
+    setName("");
+    setEmail("");
+  };
 
   return (
     <div className="container">
-
       <div className="details">
-        <input id="name" className="input" type="text" placeholder="Enter Your Name" onChange={(e) => setname(e.target.value)}></input>
-        <input id="email" className="input" type="text" placeholder="Enter Your Email" onChange={(e) => setemail(e.target.value)}></input>
+        <input
+          id="name"
+          className="input"
+          type="text"
+          placeholder="Enter Your Name"
+          onChange={(e) => setName(e.target.value)}
+        ></input>
+        <input
+          id="email"
+          className="input"
+          type="text"
+          placeholder="Enter Your Email"
+          onChange={(e) => setEmail(e.target.value)}
+        ></input>
       </div>
 
       <div className="requirements">
-
         <div className="beds">
-          <Checkbox />
+          <Checkbox onChange={(e) => setBeds(e.target.value)} />
           <label>Beds</label>
         </div>
 
@@ -63,7 +80,6 @@ const Form = () => {
         <div className="other">
           <input type="text" placeholder="Other"></input>
         </div>
-
       </div>
 
       <div className="submit">
@@ -73,6 +89,6 @@ const Form = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Form;
