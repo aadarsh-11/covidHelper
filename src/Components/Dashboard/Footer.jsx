@@ -1,12 +1,12 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 function Footer() {
-    return (
-        <div className="footer">
-            <h1>Made with ❤ By Harsh & Aadarsh</h1>
-        </div>
-    )
+  return (
+    <div className="footer">
+      <h6>Made with ❤ By Harsh & Aadarsh</h6>
+    </div>
+  );
 }
 
 export default Footer;
