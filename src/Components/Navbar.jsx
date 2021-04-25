@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
-      <a className="navbar-brand" href="#">
+      <NavLink className="navbar-brand" to="/">
         Covid Helper
-      </a>
+      </NavLink>
       <button
         className="navbar-toggler"
         type="button"
@@ -21,19 +22,19 @@ const Navbar = () => {
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <NavLink class="nav-link active" to="/">
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <NavLink className="nav-link" to="/register">
               Register
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <NavLink className="nav-link" to="/">
               Contact Us
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
