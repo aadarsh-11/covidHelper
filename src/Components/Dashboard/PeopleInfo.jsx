@@ -10,11 +10,12 @@ const PeopleInfo = ({ peopleData }) => {
         <div className="cards">
           <div className="container-fluid">
             <div className="row">
-              {peopleData.map((data) => (
-                <div className="col-lg-3">
-                  <PeopleCard heading={data} />
-                </div>
-              ))}
+              {peopleData &&
+                peopleData.map((data) => (
+                  <div className="col-lg-3">
+                    <PeopleCard heading={data.name} />
+                  </div>
+                ))}
             </div>
           </div>
         </div>
