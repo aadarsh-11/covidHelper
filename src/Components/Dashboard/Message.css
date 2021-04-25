@@ -1,7 +1,27 @@
 .messageHeading {
+  font-size: 4.5vw;
   padding: 2% 0;
 }
 
 .messageContent {
+  font-size: 2vw;
   padding: 0 2%;
+}
+
+.messageContainer {
+  text-align: center;
+  color: white;
+  margin: 4%;
+  margin-bottom: 6%;
+}
+
+.imageContainer > img {
+  position: absolute;
+  background-color: #fcf6f5ff;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
 }

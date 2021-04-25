@@ -1,3 +1,14 @@
-.nav {
-  bg-color: aquamarine;
+.navbar {
+  background-color: #2bae66ff;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
 }

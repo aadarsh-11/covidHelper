@@ -1,6 +1,7 @@
 .peopleInfo {
-  background-color: aquamarine;
+  background-color: #2bae66ff;
   padding: 0 3% 3%;
+  color: white;
 }
 
 .peopleInfo > h1 {
@@ -10,4 +11,5 @@
 .cards {
   display: flex;
   justify-content: space-evenly;
+  color: black;
 }
