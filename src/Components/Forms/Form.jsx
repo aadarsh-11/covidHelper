@@ -7,11 +7,13 @@ const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [city, setCity] = useState("");
   const [beds, setBeds] = useState("");
   const [icu, setIcu] = useState("");
   const [oxygen, setOxygen] = useState("");
   const [remdesivir, setRemdesivir] = useState("");
   const [ventilator, setVentilator] = useState("");
+  const [other, setOther] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +22,8 @@ const Form = () => {
       .add({
         name: name,
         email: email,
+        phone: phone,
+        city: city,
         beds: beds,
       })
       .then(() => {
@@ -30,6 +34,9 @@ const Form = () => {
       });
     setName("");
     setEmail("");
+    setPhone("");
+    setCity("");
+    setOther("");
   };
 
   return (
@@ -49,11 +56,25 @@ const Form = () => {
           placeholder="Enter Your Email"
           onChange={(e) => setEmail(e.target.value)}
         ></input>
+        <input
+          id="phoneNo"
+          className="input"
+          type="text"
+          placeholder="Enter Your Phone Number"
+          onChange={(e) => setPhone(e.target.value)}
+        ></input>
+        <input
+          id="city"
+          className="input"
+          type="text"
+          placeholder="Enter Your City"
+          onChange={(e) => setCity(e.target.value)}
+        ></input>
       </div>
 
       <div className="requirements">
         <div className="beds">
-          <Checkbox onChange={(e) => setBeds(e.target.value)} />
+          <Checkbox/>
           <label>Beds</label>
         </div>
 
@@ -78,7 +99,7 @@ const Form = () => {
         </div>
 
         <div className="other">
-          <input type="text" placeholder="Other"></input>
+          <input type="text" placeholder="Other" onChange={(e) => setOther(e.target.value)}></input>
         </div>
       </div>
 
